@@ -1,7 +1,8 @@
 /*
     Discord Teleporter 8mb
     by: Wassimulator
-
+    1.0
+    
 A basic program that disects a file into a set of 8mb chunks to send through Discord and bypass the very low limit.
 The program also assimilates the chunks back into a file.
 
@@ -24,15 +25,6 @@ Usage:
 
 #define EIGHT_MB 8388608
 
-float clamp(uint64_t input, uint64_t min, uint64_t max)
-{
-    if (input < min)
-        return min;
-    else if (input > max)
-        return max;
-    else
-        return input;
-}
 void ErrorUsage()
 {
     printf("WRONG PARAMETERS. Usage: dt8mb [send/receive] file.extention\n");
